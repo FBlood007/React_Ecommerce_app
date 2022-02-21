@@ -1,0 +1,75 @@
+.product-container{
+    padding: 15px;
+    text-align: center;
+}
+
+.product-container .category-name{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight:bolder;
+    text-decoration: underline;
+
+}
+
+.product-container .product-item-container img{
+    max-width: 200px;
+    margin-top: 20px;
+}
+
+.parent-item-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.product-item-container{
+    width: calc(33.33% - 17px);
+    border: 5px solid rgb(196, 92, 206);
+    border-style: groove;
+}
+.oprice{
+    color: rgb(124, 11, 11);
+    padding-right: 10px;
+    text-decoration: line-through;
+}
+
+.dprice{
+    color: #000;
+    font-weight: bold;
+}
+
+h1{
+    background-color: rgb(82, 137, 173);
+    border-radius: 50%;
+
+}
+
+.App{
+    background-image: url("https://www.maketecheasier.com/assets/uploads/2020/12/4k-desktop-backgrounds-windows-10.jpg.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+@media (min-width:320px) and (max-width:767px){
+    .product-item-container{
+        width: calc(50% - 17px);
+    }
+
+    .product-container .product-item-container img{
+        max-width: 100px;
+        margin-top: 20px;
+    }
+
+    h1{
+        background-color: rgb(82, 137, 173);
+        border-radius: 50%;
+        font-size: x-large;
+    
+    }
+}
+
+@media (min-width:320px) and (max-width:400px){
+    .product-item-container{
+        width: calc(100% - 17px);
+    }
+}
